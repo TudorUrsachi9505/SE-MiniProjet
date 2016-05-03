@@ -1,0 +1,10 @@
+def main():
+    labyrinth = [list(x) for x in LABYRINTH.splitlines() if x]
+    solve(labyrinth, 0, 1, len(labyrinth[0]), len(labyrinth))
+    for line in labyrinth:
+        print ("".join(line))
+
+if __name__ == "__main__":
+    main()
+
+"""Aici este metoda MAIN prin care gasim solutia labirintului""" 
